@@ -20,8 +20,8 @@ function App() {
   // },[])
 
   
-  async function fetchChord(Root,Quality,Tension){
-    const chord = await fetch(`https://api.uberchord.com/v1/chords/${Root}_${Quality}${Tension}`);
+  async function fetchChord(Root,Quality){
+    const chord = await fetch(`https://api.uberchord.com/v1/chords/${Root}_${Quality}`);
     const data = await chord.json();
     setFrets(data[0].strings)
     setChord(data)
@@ -36,31 +36,29 @@ function App() {
   //   }
   // }
   function handleSubmit(Root,Quality,Tension,Bass){
-    fetchChord(Root,Quality,Tension)
+    fetchChord(Root,Quality)
 
   }
 
 
   return (
     <div className="App">
-        <div className = "chord-finder">
-
           <div className = "chord-diagram">
-            <h1>Strings:{frets}</h1>
-            <h1>Fingering:{chord[0].fingering}</h1>
-            <h1>Chord name:{chord[0].chordName}</h1>
-            <h1>Diagram</h1>
+          <h1>Chord name:{chord[0].chordName.replaceAll(',','')}</h1>
+          <h1>Tones: {chord[0].tones}</h1>
           </div>
+        <Diagram frets = {frets} stringNum = {stringNum}/> 
+        <div className = "chord-finder">
         <ChordForm
          Root = {input.Root}
          Quality = {input.Quality}
          Tension = {input.Tension}
          Bass = {input.Bass}
-        //  handleChange = {handleChange}
          handleSubmit = {handleSubmit}
         />
+
+
         </div>
-        {loading ? <Diagram frets = {frets} stringNum = {stringNum}/> : 'Loading'}
     </div>
   );
 }
