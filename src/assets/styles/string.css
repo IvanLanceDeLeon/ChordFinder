@@ -1,0 +1,101 @@
+.string{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+#fret0{
+    width:0%;
+}
+.Fret{
+    margin-top: -18px;
+    border: 10px;
+    border-top:  10px double black;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom:double black;
+    width: 7%;
+}
+
+.Fret0, .Fret1, .Fret2, .Fret3, .Fret4, .Fret5{
+    margin-top: -18px;
+    border: 10px;
+    border-top:  10px double black;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom:double black;
+    width: 7%;
+}
+
+.Fret5{
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+}
+.string{
+    height:8%;
+}
+
+
+/* #String5{
+    border-bottom:solid black;
+} */
+
+/* hr{    height: 6px;
+    background: black;
+    } */
+.active{
+    background: black;
+    height: 100%;
+    border-radius: 100%;
+    width: 50%;
+    margin: 0px auto;
+    position: relative;
+    top: -60%;
+
+}
+.fretBoard{
+    height: 92%;
+    width: 77%;
+    margin-left: 10%;
+    
+}
+.fretactive{
+    background-color:black;
+    border-radius:100%
+}
+
+
+
+.diagram{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 77% 100%;
+}
+
+
+/* #String0{
+    background-color:red;
+    opacity:50%
+}
+#String1{
+    background-color:orange;
+    opacity:50%
+
+}#String2{
+    background-color:yellow;
+    opacity:50%
+
+}#String3{
+    background-color:green;
+    opacity:50%
+
+}#String4{
+    background-color:blue;
+    opacity:50%
+
+}#String5{
+    background-color:violet;
+    opacity:50%
+
+} */
