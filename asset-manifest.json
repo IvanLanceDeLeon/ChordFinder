@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ChordFinder/static/css/main.06d629fe.css",
-    "main.js": "/ChordFinder/static/js/main.6410cb08.js",
+    "main.css": "/ChordFinder/static/css/main.e9350f64.css",
+    "main.js": "/ChordFinder/static/js/main.b78b7a09.js",
     "static/js/787.2b82b839.chunk.js": "/ChordFinder/static/js/787.2b82b839.chunk.js",
     "static/media/bare-dots.png": "/ChordFinder/static/media/bare-dots.367664e0a81418dfcbb3.png",
     "static/media/logo.svg": "/ChordFinder/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ChordFinder/index.html",
-    "main.06d629fe.css.map": "/ChordFinder/static/css/main.06d629fe.css.map",
-    "main.6410cb08.js.map": "/ChordFinder/static/js/main.6410cb08.js.map",
+    "main.e9350f64.css.map": "/ChordFinder/static/css/main.e9350f64.css.map",
+    "main.b78b7a09.js.map": "/ChordFinder/static/js/main.b78b7a09.js.map",
     "787.2b82b839.chunk.js.map": "/ChordFinder/static/js/787.2b82b839.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06d629fe.css",
-    "static/js/main.6410cb08.js"
+    "static/css/main.e9350f64.css",
+    "static/js/main.b78b7a09.js"
   ]
 }
